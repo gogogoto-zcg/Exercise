@@ -12,9 +12,12 @@ spring:
 
 mybatis:
   ## mapper.xml扫描路径
-  mapper-locations: classpath:mapping/*Mapper.xml
+  mapper-locations: classpath:mybatis/mapping/*Mapper.xml
   ## mapper.xml的pojo包前缀
   type-handlers-package: com.exercise.web.entity
   # spring boot集成mybatis的方式打印sql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    lazy-loading-enabled: true
+    #false 为按需加载
+    aggressive-lazy-loading: false

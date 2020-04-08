@@ -18,4 +18,9 @@
         on e.dept_id = d.id 
         where d.id = #{0} 
     </select>
+
+    <select id="findEmployeeById" parameterType="java.lang.Integer" resultType="com.exercise.web.entity.Employee">
+        select * from employee
+    </select>
+
 </mapper>

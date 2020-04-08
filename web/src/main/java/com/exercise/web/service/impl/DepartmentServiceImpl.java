@@ -16,4 +16,9 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Department getDepartmentById(Integer id) {
         return departmentMapper.getDepartmentById(id);
     }
+
+    @Override
+    public Department getDepartmentLazyById(Integer id) {
+        return departmentMapper.getDepartmentLazyById(id);
+    }
 }

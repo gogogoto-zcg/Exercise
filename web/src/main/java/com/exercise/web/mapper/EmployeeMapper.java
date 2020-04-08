@@ -10,4 +10,6 @@ public interface EmployeeMapper {
 
     List<Employee> getEmployeesByDeptId(Integer id);
 
+    /*测试延迟加载*/
+    List<Employee> findEmployeeById(Integer id);
 }

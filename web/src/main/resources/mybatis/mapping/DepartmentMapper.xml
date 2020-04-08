@@ -13,10 +13,24 @@
         </collection>
     </resultMap>
 
+    <!--一对多查询封装-->
     <select id="getDepartmentById" parameterType="java.lang.Integer" resultMap="departmentMap">
         select d.id,d.name,e.id e_id,e.name e_name
         from department d left join employee e
         on d.id = e.dept_id
         where d.id = #{0}
     </select>
+
+    <!--延迟加载-->
+    <resultMap id="departmentLazyMap" type="com.exercise.web.entity.Department">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="employeeList" ofType="com.exercise.web.entity.Employee"
+                    select="com.exercise.web.mapper.EmployeeMapper.findEmployeeById" column="id" fetchType="lazy" />
+    </resultMap>
+
+    <select id="getDepartmentLazyById" parameterType="java.lang.Integer" resultMap="departmentLazyMap">
+        select * from department where id = #{0}
+    </select>
+
 </mapper>
