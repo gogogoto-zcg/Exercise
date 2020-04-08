@@ -8,13 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="baseskill" />
         <module name="Exercise" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Exercise" options="-parameters" />
       <module name="baseskill" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="web" options="-parameters" />
     </option>
   </component>
 </project>
