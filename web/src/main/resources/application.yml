@@ -15,3 +15,6 @@ mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
   ## mapper.xml的pojo包前缀
   type-handlers-package: com.exercise.web.entity
+  # spring boot集成mybatis的方式打印sql
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

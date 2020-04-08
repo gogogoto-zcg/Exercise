@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exercise.web.mapper.DepartmentMapper">
+
+    <!--一对多的结果集封装, 根据部门id查部门，部门下有多少员工-->
+    <!--多对多即加一个中间表，两头都是一对多的关系-->
+    <resultMap id="departmentMap" type="com.exercise.web.entity.Department">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="employeeList" ofType="com.exercise.web.entity.Employee">
+            <id column="e_id" property="id"/>
+            <result column="e_name" property="name"/>
+        </collection>
+    </resultMap>
+
+    <select id="getDepartmentById" parameterType="java.lang.Integer" resultMap="departmentMap">
+        select d.id,d.name,e.id e_id,e.name e_name
+        from department d left join employee e
+        on d.id = e.dept_id
+        where d.id = #{0}
+    </select>
+</mapper>
