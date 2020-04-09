@@ -15,7 +15,10 @@ import org.springframework.context.event.ContextRefreshedEvent;
 /**
  * @Author : cg.Zhou
  * @date : 2020/4/9 0009 -12:28
- * @Description : TODO
+ * @Description :
+ *  Scheduler 注入
+ * 这里采用监听spring容器加载完毕后事件，启动任务调用
+ * 将Scheduler交给spring初始化管理
  */
 @Configuration
 public class ApplicationStartQuartzJobListener implements ApplicationListener<ContextRefreshedEvent> {
