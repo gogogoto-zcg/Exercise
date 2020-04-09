@@ -12,6 +12,7 @@ dom4j 解析
 * mybatis CRUD 
 * mybatis 级联查询 一对多 一对一 多对多
 * mybatis 延迟加载
+* 引入 mybatis-plus 
 
 ## 定时任务
 * springboot 自带schedule 
