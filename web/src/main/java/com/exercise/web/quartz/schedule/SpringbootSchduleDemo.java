@@ -1,4 +1,4 @@
-package com.exercise.web.job;
+package com.exercise.web.quartz.schedule;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * @Author : cg.zhou
  * @date : 2020/4/9 000911:47
- * @Description : springboot 自带Schdule
+ * @Description : springboot 自带Schedule
  */
 @Component
 public class SpringbootSchduleDemo {
