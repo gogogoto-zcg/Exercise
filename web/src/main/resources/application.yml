@@ -2,7 +2,7 @@ server:
   port: 8080
   servlet:
     context-path: /
-
+#spring 配置
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -10,6 +10,7 @@ spring:
     username: root
     password: admin
 
+#mybatis 配置
 mybatis:
   ## mapper.xml扫描路径
   mapper-locations: classpath:mybatis/mapping/*Mapper.xml
@@ -18,6 +19,7 @@ mybatis:
   # spring boot集成mybatis的方式打印sql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #全局懒加载 ，默认false
     lazy-loading-enabled: true
-    #false 为按需加载
-    aggressive-lazy-loading: false
+    #按需加载, 默认false
+    #aggressive-lazy-loading: false
