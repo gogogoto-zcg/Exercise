@@ -27,6 +27,7 @@ dom4j 解析
 * 发布订阅模式-定向模式（direct）
 * 发布订阅模式-主题模式（topic）
 * springboot 整合rabbitmq实现五种消息模型
+* 延迟队列和死信队列的实现
 
 ## 其他工具集成
 整合swagger

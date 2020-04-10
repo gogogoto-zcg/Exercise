@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static com.exercise.web.config.RabbitMqConfig.DELAY_EXCHANGE;
+
 /**
  * @Author : cg.Zhou
  * @date : 2020/4/10 0010 -19:18
@@ -65,6 +67,17 @@ public class TestMQ {
     public void testTopicListener() throws InterruptedException {
         String msg = "hello, Spring boot amqp";
         this.amqpTemplate.convertAndSend("spring.test.exchange","a.b", msg);
+        // 等待10秒后再结束
+        Thread.sleep(10000);
+    }
+
+    //延迟队列
+    @Test
+    public void testDelayQueue() throws InterruptedException {
+        String msg = "amqp delay_msg 发送";
+        for (int i=0;i<10;i++){
+            amqpTemplate.convertAndSend(DELAY_EXCHANGE,"msg.delay",msg+1);
+        }
         // 等待10秒后再结束
         Thread.sleep(10000);
     }
