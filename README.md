@@ -26,6 +26,7 @@ dom4j 解析
 * 发布订阅模式-广播模式（fanout）
 * 发布订阅模式-定向模式（direct）
 * 发布订阅模式-主题模式（topic）
+* springboot 整合rabbitmq实现五种消息模型
 
 ## 其他工具集成
 整合swagger

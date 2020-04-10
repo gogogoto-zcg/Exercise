@@ -28,6 +28,11 @@ spring:
   cache:
     redis:
       time-to-live: 60000ms
+  rabbitmq:
+    host: 47.103.24.162
+#    username:
+#    password:
+    virtual-host: /
 
 #mybatis 配置
 mybatis:
@@ -42,3 +47,4 @@ mybatis:
     lazy-loading-enabled: true
     #按需加载, 默认false
     #aggressive-lazy-loading: false
+
