@@ -20,7 +20,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
  * 这里采用监听spring容器加载完毕后事件，启动任务调用
  * 将Scheduler交给spring初始化管理
  */
-@Configuration
+//@Configuration
 public class ApplicationStartQuartzJobListener implements ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
