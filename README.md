@@ -19,5 +19,13 @@ dom4j 解析
 * java 自带Timer类
 * springboot 整合quartz
 
+## 消息队列
+#### rabbitmq
+* 生产消费模式-基础模型
+* 生产消费模式-工作模型
+* 发布订阅模式-广播模式（fanout）
+* 发布订阅模式-定向模式（direct）
+* 发布订阅模式-主题模式（topic）
+
 ## 其他工具集成
 整合swagger
