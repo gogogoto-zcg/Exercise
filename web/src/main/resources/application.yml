@@ -13,6 +13,7 @@ spring:
     host: 47.103.24.162
     port: 6379
     database: 0
+    password: redis123
     timeout: 1000s # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
     jedis:
       pool:
