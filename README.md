@@ -33,5 +33,12 @@ dom4j 解析
 * springboot 整合redis
 * redis 锁实现 以及ThreadLocal共享变量的使用
 
+## JUC
+* CountDownLatch
+* CycleBarrier
+* Semaphore
+* ReentrantLock
+* 自定义线程池
+
 ## 其他工具集成
 整合swagger
