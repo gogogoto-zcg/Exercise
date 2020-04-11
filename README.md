@@ -29,5 +29,17 @@ dom4j 解析
 * springboot 整合rabbitmq实现五种消息模型
 * 延迟队列和死信队列的实现
 
+## redis
+* springboot 整合redis
+* redis 锁实现 以及ThreadLocal共享变量的使用
+
+## JUC
+* CountDownLatch
+* CycleBarrier
+* Semaphore
+* ReentrantLock
+* 自定义线程池
+* forkJoinPool
+
 ## 其他工具集成
 整合swagger
