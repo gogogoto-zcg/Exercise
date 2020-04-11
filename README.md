@@ -39,6 +39,7 @@ dom4j 解析
 * Semaphore
 * ReentrantLock
 * 自定义线程池
+* forkJoinPool
 
 ## 其他工具集成
 整合swagger
