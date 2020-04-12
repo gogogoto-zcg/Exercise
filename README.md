@@ -12,6 +12,7 @@ dom4j 解析
 * Feign
 * Hystrix
 * Actuator
+* gateway
 
 ## mybatis
 * springboot 整合mybatis

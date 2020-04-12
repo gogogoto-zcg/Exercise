@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+      routes:
+        #商品服务路由
+        - id: pms_route
+          uri: lb://service-pms #实现负载均衡
+          predicates:
+            - Path=/pms/**
+        #订单服务路由
+        - id: oms_route
+          uri: http://localhost:3333 #没有负载均衡效果
+          predicates:
+            - Path=/oms/**
+
+server:
+  port: 1000
+#指定注册到哪个注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    #注册自己的服务使用ip的方式
+    prefer-ip-address: true
