@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: service-oms
+server:
+  port: 3333
+
+#指定注册到哪个注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    #注册自己的服务使用ip的方式
+    prefer-ip-address: true
+#开启feign对Hystrix支持
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        # 加载所有的端点/默认只加载了 info / health
+        include:
+

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: service-pms
+server:
+  port: 2222
+
+#指定注册到哪个注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    #注册自己的服务使用ip的方式
+    prefer-ip-address: true

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cloud-eureka
+
+server:
+  port: 1111
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #自己就是注册中心，不用注册自己
+    register-with-eureka: false
+    #要不要去注册中心获取其他服务的地址
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

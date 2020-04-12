@@ -7,6 +7,12 @@ dom4j 解析
 * springmvc 架构实现
 * 拦截器 过滤器实现
 
+## spring Cloud
+* Eureka
+* Feign
+* Hystrix
+* Actuator
+
 ## mybatis
 * springboot 整合mybatis
 * mybatis CRUD 
