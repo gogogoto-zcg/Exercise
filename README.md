@@ -14,6 +14,7 @@ dom4j 解析
 * Hystrix
 * Actuator
 * gateway
+* config 实现分布式动态配置（/Actuator/refresh 方式）
 
 ## mybatis
 * springboot 整合mybatis
