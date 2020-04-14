@@ -16,6 +16,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/baseskill/pom.xml" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/serivce-pms/pom.xml" />
+        <option value="$PROJECT_DIR$/service-config/pom.xml" />
+        <option value="$PROJECT_DIR$/service-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service-oms/pom.xml" />
+        <option value="$PROJECT_DIR$/service-register/pom.xml" />
+        <option value="$PROJECT_DIR$/service-config/service-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/service-config/service-config-server/pom.xml" />
       </list>
     </option>
   </component>

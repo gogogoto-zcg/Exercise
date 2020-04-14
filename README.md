@@ -5,6 +5,7 @@ dom4j 解析
 
 ## spring
 * spring 生命周期
+* spring AOP + 自定义注解
 * springmvc 架构实现
 * 拦截器 过滤器实现
 

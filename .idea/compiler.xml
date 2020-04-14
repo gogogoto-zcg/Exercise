@@ -7,13 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-config" />
         <module name="baseskill" />
-        <module name="Exercise" />
         <module name="web" />
+        <module name="service-config-client" />
+        <module name="service-config-server" />
+        <module name="service-gateway" />
+        <module name="register" />
+        <module name="service-oms" />
+        <module name="serivce-pms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="service-config-server (1)" target="1.8" />
+      <module name="service-config-server (2)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -21,6 +29,14 @@
       <module name="Exercise" options="-parameters" />
       <module name="baseskill" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="register" options="-parameters" />
+      <module name="serivce-pms" options="-parameters" />
+      <module name="service-config" options="-parameters" />
+      <module name="service-config-client" options="-parameters" />
+      <module name="service-config-server" options="-parameters" />
+      <module name="service-config-server (1)" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
+      <module name="service-oms" options="-parameters" />
       <module name="web" options="-parameters" />
     </option>
   </component>
