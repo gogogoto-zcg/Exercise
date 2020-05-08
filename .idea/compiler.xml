@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service-config" />
         <module name="baseskill" />
+        <module name="demo" />
         <module name="web" />
         <module name="service-config-client" />
         <module name="service-config-server" />
@@ -19,7 +20,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="1.8" />
       <module name="service-config-server (1)" target="1.8" />
       <module name="service-config-server (2)" target="1.8" />
     </bytecodeTargetLevel>

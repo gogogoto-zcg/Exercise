@@ -64,4 +64,5 @@ dom4j 解析
 * forkJoinPool
 
 ## 其他工具集成
-整合swagger
+* 整合swagger
+* Druid

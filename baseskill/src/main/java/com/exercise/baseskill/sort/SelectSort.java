@@ -13,7 +13,7 @@ public class SelectSort {
 
     public static void selectSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = i + 1; j < arr.length - 1; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] > arr[j]) {
                     int tmp = arr[j];
                     arr[j] = arr[i];
@@ -24,7 +24,7 @@ public class SelectSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {11, 4, 6, 2, 7, 12, 5, 13, 20};
+        int[] arr = {11, 4, 6, 2, 7, 12, 5, 13, 1};
         SelectSort.selectSort(arr);
         System.out.println(Arrays.toString(arr));
     }

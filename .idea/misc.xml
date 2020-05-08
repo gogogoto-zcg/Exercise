@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/service-register/pom.xml" />
         <option value="$PROJECT_DIR$/service-config/service-config-client/pom.xml" />
         <option value="$PROJECT_DIR$/service-config/service-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
   </component>
